@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="addBody">
+		{% if is_granted('ROLE_ADMIN') %}
+
+
+			<h3>Ajouter un article</h3>
+			<div>
+				{{ form(form_text) }}
+				</div>
+
+				<button>
+					<a href="{{ path('posts') }}">Liste des articles</a>
+				</button>
+
+			{% else %}
+				<h3>Vous n'avez pas acces à cette page</h3>
+			{% endif %}
+		</div>
+	{% endblock %}

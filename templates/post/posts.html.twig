@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostsController!
+{% endblock %}
+
+{% block body %}
+	<div class="postsBody">
+		<h1>Liste des articles</h1>
+
+		{% if is_granted('ROLE_ADMIN') %}
+
+			<button>
+				<a href="{{ path('add_post') }}">Ajouter un article</a>
+			</button>
+		{% endif %}
+
+
+		{% for post in posts %}
+			{# <table>
+										<thead>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Text</th>
+										</thead>
+										<tbody>
+											<td>{{ post.id }}</td>
+											<td>{{ post.title }}</td>
+											<td>{{ post.text }}</td>
+										</tbody>
+										</table> #}
+			<div>
+				{# <h4>{{ post.title }}</h4>
+												<p>{{ post.text }}</p>
+												<td> #}
+				<a href="{{ path('post', {'id': post.id}) }}">{{ post.title }}</a>
+				{# en argument le nom de la route et l id post trasmit via l url ducoup on peut passer a la page article enpassant par la page post/article#}
+			</td>
+		</div>
+
+
+	{% endfor %}
+
+</div>{% endblock %}

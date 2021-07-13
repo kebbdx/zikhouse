@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ClassRoomController!
+{% endblock %}
+
+{% block body %}
+
+	<div class="classroomBody">
+		<div>
+			<h1>Les classes instruments</h1>
+		</div>
+		<div>
+
+			{% for classroom in classrooms %}
+				<p>{{classroom.name}}</p>
+
+			{% endfor %}
+
+
+		</div>
+
+
+	</div>
+
+
+{% endblock %}

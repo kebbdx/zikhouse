@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+	<div class="indexBody">
+
+		<h1>
+			{{ post.title }}</h1>
+		<p>
+			{{ post.text }}</p>
+
+
+		{% if is_granted('ROLE_ADMIN') %}
+
+
+			{# <a href="{{ path('modify_post', {'id': post.id}) }}">Modifier cet article</a> #}
+			{# <a href="{{ path('delete_post', {'id': post.id}) }}">Supprimer cet article</a> #}
+
+				<form
+				action="{{ url('modify_post', { id: post.id }) }}" method="post"> {# the argument of csrf_token() is an arbitrary string used to generate the token #}
+				<input type="hidden" name="token" value="" {{ path('modify_post', {'id': post.id} ) }}""/>
+
+				<button class="button" type="submit">Modifier</button>
+			</form>
+
+
+			<form
+				action="{{ url('delete_post', { id: post.id }) }}" method="post">
+				{# the argument of csrf_token() is an arbitrary string used to generate the token #}
+				<input type="hidden" name="token" value="{{ csrf_token('delete-post' ~ post.id)}}"/>
+
+				<button class="button" type="submit">Supprimer</button>
+			</form>
+
+			<form
+				action="{{ url('add_post') }}" method="post">
+				{# the argument of csrf_token() is an arbitrary string used to generate the token #}
+				<input type="hidden" name="token" value="{{ path('add_post') }}"/>
+
+				<button class="button" type="submit">Ajouter un article</button>
+			</form>
+
+
+		{% endif %}
+
+
+		<button>
+			<a href="{{ path('posts') }}">Liste des articles</a>
+		</button>
+
+	</div>
+{% endblock %}

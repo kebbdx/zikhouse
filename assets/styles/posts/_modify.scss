@@ -1,0 +1,14 @@
+.modifyBody{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+}

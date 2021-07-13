@@ -1,0 +1,51 @@
+<nav>
+	<ul>
+		<li>
+			<a href="{{ path('index') }}">Accueil</a>
+		</li>
+
+
+		<li>
+			<a href="{{ path('class_room') }}">Classes</a>
+		</li>
+
+
+		{% if app.user %}
+			{# MODIFICATION DE LA NAVBAR QUAND C'EST L'ADMIN #}
+			<li>
+				<a href="{{ path('app_logout') }}">Se déconnecter</a>
+			</li>
+			<li>
+				<a href="{{ path('user_profile') }}">Mon profile</a>
+			</li>
+
+
+			{% if is_granted('ROLE_ADMIN') %}
+				<li>
+					<a href="{{ path('admin') }}">Espace ADMIN</a>
+				</li>
+
+
+			{% endif %}
+
+		{% else %}
+
+			<li>
+				<a href="{{ path('app_login') }}">Se connecter</a>
+			</li>
+
+			<li>
+				<a href="{{ path('app_register') }}">S'inscrire</a>
+			</li>
+
+
+		{% endif %}
+
+
+		<li>
+			<a href="{{ path('posts') }}">Articles</a>
+		</li>
+
+
+	</ul>
+</nav>
