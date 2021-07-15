@@ -5,10 +5,11 @@
 
 	<div class="indexBody">
 
-		<h1>
-			{{ post.title }}</h1>
-		<p>
-			{{ post.text }}</p>
+		<div class="article">
+			<h1>{{ post.title }}</h1>
+
+			<p>{{ post.text }}</p>
+		</div>
 
 
 		{% if is_granted('ROLE_ADMIN') %}

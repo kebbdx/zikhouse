@@ -1,14 +1,28 @@
 .indexBody{
     height: 100vh;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color:black;
+    color:white;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     a{
         text-decoration: none;
     }
-}
+    .article{
+        height: 20vh;
+        width:30vw;
+        // background-color: blue;
+        display: flex;
+        flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    }
+    
+    
+       
+    
+} 

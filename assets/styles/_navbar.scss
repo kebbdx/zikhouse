@@ -1,8 +1,16 @@
-nav{
-    height: 15vh;
+@use 'variables';
+    nav{  
+    position: fixed;
+    top: 2vh;
+
+    width: 98%;
+    height: 10vh;
     width: 100%;
     font-size: 20px;
-    background-color:#611C35;
+    // background-color:#611C35;
+    background-color:$blue;
+
+
     
     ul {
         width: 100%;
@@ -23,6 +31,11 @@ nav{
             a{
                 text-decoration: none;
                 color: white;
+            }
+
+            a:hover{
+                color: blue;
+                cursor: url("/assets/img/cledesol.png");
             }
            
             

@@ -124,6 +124,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return array_unique($roles);
     }
 
+    public function getRolesDisplay(): string // On cree un champs virtuelpour  afficher les roles
+    {
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+       
+
+        return $roles[0];
+    }
+
+    public function setRolesDisplay(string $roles): self
+    {
+        $this->roles = explode(",", $roles);
+
+        return $this;
+    }
+
     public function setRoles(array $roles): self
     {
         $this->roles = $roles;

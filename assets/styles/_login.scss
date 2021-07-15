@@ -1,5 +1,5 @@
 .loginBody{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: black;
     color: white;
@@ -8,4 +8,80 @@
 
     justify-content: center;
     align-items: center;
+    form{
+        
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input{
+        height: 5vh;
+        width: 40vw;
+        margin: 10px;
+        text-align: center;
+        border-radius: 40px;
+        
+
+    
+
+
+    }
+    input:focus{
+        outline: none;
+        box-shadow: 0px 0px 5px #61C5FA;
+        border-color: #5AB0DB;
+    }
+    
+    input:hover {
+        border: 1px solid #999;
+        border-radius: 40px;
+        // background-color: brown;
+        filter:invert(1);
+    }
+    button{
+        border-radius: 40px;
+        margin-top: 2vh;
+        padding: 8px;
+        width: 10vw;
+        transition: 0.5s;
+        
+        
+    }
+    button:after {
+        position: absolute;
+        opacity: 0;  
+        top: 14px;
+        right: -20px;
+        transition: all 0.5s;
+        transition: 0.5s;
+      }
+    
+    button:hover{
+        filter:invert(1);
+        width: 40vw;
+
+
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: small;
+        margin: 2vh;
+        // transition: all 2s;
+
+    }
+    
+    a:hover{
+        // margin: 3vh;
+        color: yellow;
+	// transform: rotate(360deg);
+	// border-radius: 50%;
+        
+
+
+    }
+    
+
+    }
+
 }
