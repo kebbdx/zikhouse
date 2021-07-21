@@ -1,5 +1,76 @@
 footer{
-    height: 10vh;
+    height: 25vh;
     width: 100vw;
-    background-color: blueviolet;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+       .general{ 
+        height: 100%;
+        width:100%;
+        background-color:$blue;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: $gray;
+
+            p{
+                font-size: 2vh;
+                opacity: 0.6;
+            }
+            h6{
+                font-size: 2vh;
+                opacity: 0.7;
+                margin-top: 2vh;
+            }
+            h2{
+                font-size: 3vh;
+                opacity: 0.9;
+            }
+            h3{
+                font-weight: 900;
+                font-size: 3vh;
+                opacity: 0.8;
+            }
+            
+            &:nth-last-child(){
+                font-size: 3vh;
+                opacity: 0.9;
+                margin-bottom: 15vh;
+            }
+            .besoin{
+                display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+            }
+            .coordonnees{
+                width: 80%;
+                display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+                
+        div{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+
+       
+
+
+
+        
+
+            }
+       
+        
+    }
+
 }

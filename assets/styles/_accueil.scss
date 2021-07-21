@@ -1,10 +1,45 @@
 .AccueilBody
-{ height: 100vh;
+{ height: 90vh;
     width: 100%;
-    background-color: black;
+    // background-color:black;
+    background-image:url(../img/childguitar.jpg);
+    background-size: cover;
+    background-repeat: space;
+    background-position: bottom;
+    font-family: 'Poppins';
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    div{
+        height: 35vh;
+        width: 70vw;
+        color: $blue;
+        margin: 3vh;
+        opacity: 0.9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .logo{
+            height: 5em;
+            width: 5em;
+            background-image: url(../img/chant.jpg);
+        }
+        h1{
+            font-size: 35px;
+            margin-top:10vh;
 
+        }
+        p{
+            font-size:25px;  
+            color: black;
+            text-align:center;
+            opacity: 0.9;
+            margin-bottom:5vh;
+            color: $orange;
+
+        }
+    }
 }

@@ -4,6 +4,7 @@
     background-color:black;
     color:white;
     display: flex;
+    font-family: "poppins";
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,18 +12,37 @@
         text-decoration: none;
     }
     .article{
-        height: 20vh;
-        width:30vw;
-        // background-color: blue;
+        height: auto;
+        width:50vw;
+        background-color: black;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 20px;
+        }
+        
+        p{
+            height: auto;
+            width: 100%;
+            text-align: left;
+            color: $orange;
+            padding: 2vh;
+            margin-left: 2vw;
+        
 
-    justify-content: center;
-    align-items: center;
-
+        }
+        
     }
     
-    
+    form{
+        button{
+            color: red;
+            background-color: green;
+        }
+
+    }
        
     
 } 

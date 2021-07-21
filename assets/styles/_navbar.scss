@@ -1,42 +1,71 @@
 @use 'variables';
-    nav{  
-    position: fixed;
-    top: 2vh;
+.navBody{
 
-    width: 98%;
     height: 10vh;
     width: 100%;
-    font-size: 20px;
-    // background-color:#611C35;
     background-color:$blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    nav{  
+        position: fixed;
+    
+        top: 3vh;
+
+        width: 95%;
+        height: 10vh;
+        font-size: 20px;
+        z-index: 3000;
+
+        background-color:$orange;
+        opacity: 0.9;
+        // border-radius: 5vh;
+
+
 
 
     
-    ul {
-        width: 100%;
-        height: 100%;
+        ul {
+            width: 100%;
+            height: 100%;
 
-        list-style-type: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        
+            list-style-type: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
 
-        li {
+            .logo{
+                height: 110px;
+                width: 130px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    margin-top: 3vh;
+                }
+
+            }
+     
+
+            li {
             display: inline;
 
-            a{
-                text-decoration: none;
-                color: white;
-            }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
 
-            a:hover{
-                color: blue;
-                cursor: url("/assets/img/cledesol.png");
-            }
+                a:hover{
+                    color:black;
+                    // cursor: url(../img/cledesol.png);
+                    
+                }
            
             
           }
@@ -44,4 +73,5 @@
 
       
 
+    }
 }

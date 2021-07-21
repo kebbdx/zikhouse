@@ -1,10 +1,14 @@
 .loginBody{
     height: 90vh;
     width: 100%;
-    background-color: black;
+   
+    // background-color: black;
+    background-image: url(../../assets/img/pianochild.jpg);
+    background-size: cover;
     color: white;
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins';
 
     justify-content: center;
     align-items: center;
@@ -20,6 +24,11 @@
         margin: 10px;
         text-align: center;
         border-radius: 40px;
+
+
+        &::placeholder{
+            font-style: oblique;
+        }
         
 
     
@@ -35,7 +44,6 @@
     input:hover {
         border: 1px solid #999;
         border-radius: 40px;
-        // background-color: brown;
         filter:invert(1);
     }
     button{
@@ -64,7 +72,7 @@
     }
     a{
         text-decoration: none;
-        color: white;
+        color:$blue;
         font-size: small;
         margin: 2vh;
         // transition: all 2s;
@@ -73,7 +81,7 @@
     
     a:hover{
         // margin: 3vh;
-        color: yellow;
+        color: white;
 	// transform: rotate(360deg);
 	// border-radius: 50%;
         

@@ -36,7 +36,7 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
-        yield MenuItem::linkToRoute('Profile', 'fa fa-home', "user_profile"); // afficher le bouton accueil
+        yield MenuItem::linkToRoute('Profile', 'fa fa-home', "user_profile"); // afficher le bouton PROFIL
 
     }
 
