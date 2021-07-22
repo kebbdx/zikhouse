@@ -15,7 +15,6 @@ class PostFormType extends AbstractType
         $builder
             ->add('title')
             ->add('text')
-            ->add('submit',SubmitType::class)
 
         ;
     }

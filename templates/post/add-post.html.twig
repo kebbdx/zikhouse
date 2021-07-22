@@ -7,15 +7,26 @@
 
 			<h3>Ajouter un article</h3>
 			<div>
-				{{ form(form_text) }}
-				</div>
+				{{ form_start(form_text) }}
+				{{ form_row(form_text.title , { 'attr': {'class': 'form-control',
+'placeholder': "Entrez le titre"} }) }}
+				{{ form_row(form_text.text , { 'attr': {'class': 'form-control',
+'placeholder': "Entrez le text"} }) }}
 
-				<button>
-					<a href="{{ path('posts') }}">Liste des articles</a>
-				</button>
+				<button type="submit" class="btn">
+					Ajouter</button>
 
-			{% else %}
-				<h3>Vous n'avez pas acces à cette page</h3>
-			{% endif %}
-		</div>
-	{% endblock %}
+
+				{{ form_end(form_text) }}
+			</div>
+
+
+			<a href="{{ path('posts') }}">
+				Liste des articles</a>
+
+
+		{% else %}
+			<h3>Vous n'avez pas acces à cette page</h3>
+		{% endif %}
+	</div>
+{% endblock %}

@@ -15,7 +15,7 @@ footer{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: $gray;
+        color: black;
 
             p{
                 font-size: 2vh;
@@ -29,6 +29,7 @@ footer{
             h2{
                 font-size: 3vh;
                 opacity: 0.9;
+                margin-top: -2vh;
             }
             h3{
                 font-weight: 900;
@@ -55,12 +56,25 @@ footer{
         justify-content: space-between;
         flex-direction: row;
                 
-        div{
-            display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        }
+                div{height: 15%;
+                    width: 30%;
+                    display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                }
+                .logofooter{
+                    height: 10vh;
+                    width: 7vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-image: url(../../public/assets/img/kamal_logo_blue.png);
+                    border: 2px solid $orange;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: 1vh;
+                }
 
        
 

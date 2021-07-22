@@ -1,7 +1,6 @@
 .AccueilBody
 { height: 90vh;
     width: 100%;
-    // background-color:black;
     background-image:url(../img/childguitar.jpg);
     background-size: cover;
     background-repeat: space;
@@ -12,24 +11,26 @@
     justify-content: center;
     align-items: center;
     div{
-        height: 35vh;
+        height: 70vh;
         width: 70vw;
         color: $blue;
         margin: 3vh;
         opacity: 0.9;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items:center;
         text-align: center;
         .logo{
-            height: 5em;
-            width: 5em;
-            background-image: url(../img/chant.jpg);
+            height: 40vh;
+            width: 22vw;
+            background-image: url(../../public/assets/img/logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         h1{
-            font-size: 35px;
-            margin-top:10vh;
+            font-size: 25px;
+            margin-top:-6vh;
 
         }
         p{

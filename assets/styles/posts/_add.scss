@@ -8,7 +8,132 @@
 
     justify-content: center;
     align-items: center;
+    h3{
+        color:white;
+        font-size: 50px;
+        &::first-letter{
+            color:$blue;
+        }
+    }
     a{
         text-decoration: none;
+        font-size: 30px;
+        color: $gray;
+        margin-top: 4vh;
+        border: 1px solid $orange;
+        
+        
+   
+        &:hover{
+             color: $orange;
+        
+        }
+    
     }
+
+    div {
+
+        
+
+        color: black;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        form{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   
+            input{
+                height: 5vh;
+                width: 40vw;
+                margin: 8px;
+                text-align: center;
+                border-radius: 40px;
+                
+                &::placeholder{
+                    font-style: oblique;
+                }
+            }
+           
+            
+
+            input:focus{
+                outline: none;
+            
+            }
+            
+            input:hover {
+                border: 1px solid #999;
+                border-radius: 40px;
+                filter:invert(1);
+            }
+            textarea{
+                height: 5vh;
+                width: 40vw;
+                margin: 8px;
+                text-align: center;
+                border-radius: 40px;
+                font-family: "poppins";
+                
+                &::placeholder{
+                    font-style: oblique;
+                }
+            }
+            textarea:focus{
+                outline: none;
+            
+            }
+            
+            textarea:hover {
+                border: 1px solid #999;
+                border-radius: 40px;
+                filter:invert(1);
+            }
+
+
+
+            .checkbox{
+                input{
+                    width: 3vw;
+                    color:$orange;
+                }
+            }
+            button{
+                border-radius: 40px;
+                margin-top: 2vh;
+                padding: 8px;
+                width: 10vw;
+                transition: 0.5s;
+                
+            }
+            button:after {
+                position: absolute;
+                opacity: 0;  
+                top: 14px;
+                right: -20px;
+                transition: all 0.5s;
+                transition: 0.5s;
+            }
+            
+            button:hover{
+                filter:invert(1);
+                width: 40vw;
+
+
+            }
+
+    
+    
+
+        }
+
+    
+
+    }
+
 }
