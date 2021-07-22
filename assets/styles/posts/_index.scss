@@ -10,6 +10,20 @@
     align-items: center;
     a{
         text-decoration: none;
+        font-size: 20px;
+        color: $gray;
+        margin-top: 4vh;
+        padding: 1vh;
+        
+        
+   
+        &:hover{
+             color: $orange;
+             border: none;
+             font-size: 20px;
+        
+        }
+    
     }
     .article{
         height: auto;
@@ -38,12 +52,37 @@
     }
     
     form{
+        // button{
+        //     color: red;
+        //     background-color: green;
+        // }
         button{
-            color: red;
-            background-color: green;
+            border-radius: 40px;
+            margin-top: 1vh;
+            padding: 8px;
+            width: 10vw;
+            transition: 0.5s;
+            
         }
+        button:after {
+            position: absolute;
+            opacity: 0;  
+            top: 14px;
+            right: -20px;
+            transition: all 0.5s;
+            transition: 0.5s;
+        }
+        
+        button:hover{
+            filter:invert(1);
+            width: 40vw;
+
+
+        }
+        
 
     }
+
        
     
 } 

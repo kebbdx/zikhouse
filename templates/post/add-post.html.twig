@@ -8,9 +8,9 @@
 			<h3>Ajouter un article</h3>
 			<div>
 				{{ form_start(form_text) }}
-				{{ form_row(form_text.title , { 'attr': {'class': 'form-control',
+				{{ form_widget(form_text.title , { 'attr': {'class': 'form-control',
 'placeholder': "Entrez le titre"} }) }}
-				{{ form_row(form_text.text , { 'attr': {'class': 'form-control',
+				{{ form_widget(form_text.text , { 'attr': {'class': 'form-control',
 'placeholder': "Entrez le text"} }) }}
 
 				<button type="submit" class="btn">

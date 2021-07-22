@@ -17,15 +17,17 @@
     }
     a{
         text-decoration: none;
-        font-size: 30px;
+        font-size: 20px;
         color: $gray;
         margin-top: 4vh;
-        border: 1px solid $orange;
+        padding: 1vh;
         
         
    
         &:hover{
              color: $orange;
+             border: none;
+             font-size: 20px;
         
         }
     
@@ -54,6 +56,8 @@
                 margin: 8px;
                 text-align: center;
                 border-radius: 40px;
+                font-size: 15px;
+
                 
                 &::placeholder{
                     font-style: oblique;
@@ -73,12 +77,16 @@
                 filter:invert(1);
             }
             textarea{
-                height: 5vh;
+                height: 20vh;
                 width: 40vw;
                 margin: 8px;
                 text-align: center;
                 border-radius: 40px;
                 font-family: "poppins";
+                font-size: 15px;
+                resize:none;
+                padding: 5vh;
+
                 
                 &::placeholder{
                     font-style: oblique;
@@ -97,12 +105,7 @@
 
 
 
-            .checkbox{
-                input{
-                    width: 3vw;
-                    color:$orange;
-                }
-            }
+          
             button{
                 border-radius: 40px;
                 margin-top: 2vh;

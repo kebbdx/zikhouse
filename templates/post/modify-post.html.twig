@@ -6,15 +6,33 @@
 
 		{% if is_granted('ROLE_ADMIN') %}
 
-			<h1>Modifier cet article</h1>
+			<h3>Modifier cet article</h3>
+			{# <div>
+													{{ form(form_text) }}
+														<button type="submit" class="btn">
+															Modifer</button>
+													</div> #}
 			<div>
-				{{ form(form_text) }}
-				</div>
+				{{ form_start(form_text) }}
+				{{ form_widget(form_text.title , { 'attr': {'class': 'form-control',
+'placeholder': "Entrez le titre"} }) }}
+				{{ form_widget(form_text.text , { 'attr': {'class': 'form-control',
+'placeholder': "Entrez le text"} }) }}
+
+				<button type="submit" class="btn">
+					Modifer</button>
 
 
-			{% else %}
-				<h3>Vous n'avez pas acces à cette page</h3>
-			{% endif %}
+				{{ form_end(form_text) }}
+			</div>
 
-		</div>
-	{% endblock %}
+
+			<a href="{{ path('posts') }}">
+				Liste des articles</a>
+
+		{% else %}
+			<h3>Vous n'avez pas acces à cette page</h3>
+		{% endif %}
+
+	</div>
+{% endblock %}
