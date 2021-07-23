@@ -44,27 +44,27 @@ footer{
             }
             .besoin{
                 display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
 
             }
             .coordonnees{
                 width: 80%;
                 display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
                 
                 div{height: 15%;
                     width: 30%;
                     display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                 }
                 .logofooter{
-                    height: 10vh;
+                    height: 8vh;
                     width: 7vw;
                     display: flex;
                     align-items: center;
@@ -87,4 +87,182 @@ footer{
         
     }
 
+}
+
+
+
+//*****************************************_Responsive_************************
+
+//____TABLET______
+@media screen and (max-width: 770px) {
+    footer{
+        height: 25vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        .general{ 
+            height: 100%;
+            width:100%;
+            background-color:$blue;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: black;
+
+            p{
+                font-size: 2vh;
+                opacity: 0.6;
+            }
+            h6{
+                font-size: 2vh;
+                opacity: 0.7;
+                margin-top: 2vh;
+            }
+            h2{
+                font-size: 3vh;
+                opacity: 0.9;
+                margin-top: -2vh;
+            }
+            h3{
+                font-weight: 900;
+                font-size: 3vh;
+                opacity: 0.8;
+            }
+            
+            &:nth-last-child(){
+                font-size: 3vh;
+                opacity: 0.9;
+                margin-bottom: 15vh;
+            }
+            .besoin{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+            }
+            .coordonnees{
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                
+                div{height: 15%;
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .logofooter{
+                    height: 8vh;
+                    width: 7vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-image: url(../../public/assets/img/kamal_logo_blue.png);
+                    border: 2px solid black;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: 3vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    footer{
+        height: 25vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        .general{ 
+            height: 100%;
+            width:100%;
+            background-color:$blue;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: black;
+
+            p{
+                display: none;
+                font-size: 2vh;
+                opacity: 0.6;
+            }
+            h6{
+                font-size: 2vh;
+                opacity: 0.7;
+                // margin-top: 2vh;
+            }
+            h2{
+                font-size: 3vh;
+                opacity: 0.9;
+                margin-bottom: 1vh;
+            }
+            h3{
+                font-weight: 900;
+                font-size: 3vh;
+                opacity: 0.8;
+            }
+            
+            &:nth-last-child(){
+                font-size: 3vh;
+                opacity: 0.9;
+                // margin-bottom: 15vh;
+            }
+            .besoin{
+                width: 50vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                P{
+                    width: 100%;
+                    text-align: center;
+                    margin:1vh;
+                }
+
+            }
+            .coordonnees{
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                
+                div{height: 15%;
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .logofooter{
+                    height: 50px;
+                    width: 17vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-image: url(../../public/assets/img/kamal_logo_blue.png);
+                    border: 2px solid $blue;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: -1vh;
+                }
+            }
+        }
+    }
 }

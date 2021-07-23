@@ -3,7 +3,7 @@
    
 
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     background-color:$blue;
     display: flex;
     flex-direction: row;
@@ -13,24 +13,13 @@
 
     nav{  
         position: fixed;
-    
-        // top: 3vh;
-
-        // width: 95%;
         width: 100%;
-
         height: 10vh;
         font-size: 20px;
         z-index: 3000;
-
         background-color:$orange;
         opacity: 0.9;
-        // border-radius: 5vh;
 
-
-
-
-    
         .menu_list {
             width: 100%;
             height: 100%;
@@ -67,7 +56,6 @@
            
       }
 
-      
         #burgerlogo{
             display:none;
         }
@@ -92,7 +80,93 @@
 }
 
 
-//Responsive
+//*****************************************_Responsive_************************
+
+//____LAPTOP L_______
+@media screen and (min-width: 1440px) {
+    .navBody{
+   
+
+        height: 10vh;
+        width: 100vw;
+        background-color:$blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    
+        nav{  
+            position: fixed;
+            width: 100%;
+            height: 10vh;
+            font-size: 35px;
+            z-index: 3000;
+            background-color:$orange;
+            opacity: 0.9;
+    
+            .menu_list {
+                width: 100%;
+                height: 100%;
+    
+                list-style-type: none;
+                font-family: "poppins";
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+    
+                
+         
+    
+                li {
+                display: inline;
+    
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+    
+                    a:hover{
+                        color:black;
+                        
+                    }
+               
+                
+              }
+              
+    
+               
+          }
+    
+            #burgerlogo{
+                display:none;
+            }
+         
+    
+          
+         
+    
+          .liens_burger{
+              display: none;
+            
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                };      
+            
+            }
+          }
+    
+        }
+    }
+}
+
+
+//____TABLET______
 @media screen and (max-width: 770px) {
     .navBody{
    
@@ -107,19 +181,12 @@
     
         nav{  
             position: fixed;
-        
-            
             width: 100%;
-    
             height: 10vh;
             font-size: 20px;
             z-index: 3000;
-    
             background-color:$orange;
             opacity: 0.9;
-    
-    
-    
     
         
             .menu_list {
@@ -131,33 +198,101 @@
                 display: block;
                 position: absolute;
                 color: $blue;
-                top: 20px;
+                top: 8px;
                 right: 50px;
-
                 font-size: 50px;
             }
         
         
             .liens_burger{
                 position: absolute;
-                top:100px;
+                top:10vh;
                 right: 0px;
                 height: auto;
                 width: 100%;
                 background-color: black;
                 display: none;
-                // flex-direction: column;
-                // justify-content: space-around;
-                // align-items: center;
                 text-align: center;
                 
                 li{
+
+
+                    margin: 5vh;
+
                     a{
                         text-decoration: none;
                         color: $orange;
                         font-size: 50px;
                         font-family: "poppins";
-                        margin: 20vh;
+                    };      
+                
+                }
+            }
+            
+    
+        }
+    }
+  
+}
+
+// _____TEL L______
+@media screen and (max-width: 770px) {
+    .navBody{
+   
+
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    
+        nav{  
+            position: fixed;
+            width: 100%;
+            height: 10vh;
+            font-size: 20px;
+            z-index: 3000;
+            background-color:$orange;
+            opacity: 0.9;
+    
+        
+            .menu_list {
+                display: none;  
+            }
+
+
+            #burgerlogo{
+                display: block;
+                position: absolute;
+                color: $blue;
+                top: 8px;
+                right: 50px;
+                font-size: 50px;
+            }
+        
+        
+            .liens_burger{
+                position: absolute;
+                top:10vh;
+                right: 0px;
+                height: auto;
+                width: 100%;
+                background-color: black;
+                display: none;
+                text-align: center;
+                
+                li{
+
+
+                    margin: 5vh;
+
+                    a{
+                        text-decoration: none;
+                        color: $orange;
+                        font-size: 30px;
+                        font-family: "poppins";
                     };      
                 
                 }
