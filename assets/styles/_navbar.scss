@@ -62,10 +62,22 @@
            
             
           }
+          
+
+           
       }
 
-      .menu_burger{
-        //   display: none;
+      
+        #burgerlogo{
+            display:none;
+        }
+     
+
+      
+     
+
+      .liens_burger{
+          display: none;
         
         li{
             a{
@@ -77,4 +89,82 @@
       }
 
     }
+}
+
+
+//Responsive
+@media screen and (max-width: 770px) {
+    .navBody{
+   
+
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    
+        nav{  
+            position: fixed;
+        
+            
+            width: 100%;
+    
+            height: 10vh;
+            font-size: 20px;
+            z-index: 3000;
+    
+            background-color:$orange;
+            opacity: 0.9;
+    
+    
+    
+    
+        
+            .menu_list {
+                display: none;  
+            }
+
+
+            #burgerlogo{
+                display: block;
+                position: absolute;
+                color: $blue;
+                top: 20px;
+                right: 50px;
+
+                font-size: 50px;
+            }
+        
+        
+            .liens_burger{
+                position: absolute;
+                top:100px;
+                right: 0px;
+                height: auto;
+                width: 100%;
+                background-color: black;
+                display: none;
+                // flex-direction: column;
+                // justify-content: space-around;
+                // align-items: center;
+                text-align: center;
+                
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $orange;
+                        font-size: 50px;
+                        font-family: "poppins";
+                        margin: 20vh;
+                    };      
+                
+                }
+            }
+            
+    
+        }
+    }
+  
 }
