@@ -23,6 +23,7 @@
     input{
         height: 5vh;
         width: 40vw;
+        font-size: 15px;
         margin: 8px;
         text-align: center;
         border-radius: 40px;
@@ -56,6 +57,7 @@
     button{
         border-radius: 40px;
         margin-top: 2vh;
+        font-size: 12px;
         padding: 8px;
         width: 10vw;
         transition: 0.5s;
@@ -85,4 +87,297 @@
 
         
     
+}
+//____LAPTOP L_______
+@media screen and (min-width: 1440px){
+    .registerBody{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../../assets/img/guitar.jpg);
+        background-size: cover;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h1{
+            color: $blue;
+            font-size: 50px;
+        }
+    
+        form{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        input{
+            height: 5vh;
+            font-size: 30px;
+            width: 40vw;
+            margin: 8px;
+            text-align: center;
+            border-radius: 40px;
+            
+    
+        
+    
+    
+            &::placeholder{
+                font-style: oblique;
+            }
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0px 0px 0px #61C5FA;
+            border-color: #5AB0DB;
+        }
+        
+        input:hover {
+            border: 1px solid #999;
+            border-radius: 40px;
+            // background-color: brown;
+            filter:invert(1);
+        }
+        .checkbox{
+            input{
+                width: 3vw;
+                color:$orange;
+            }
+        }
+        button{
+            border-radius: 40px;
+            margin-top: 2vh;
+            font-size: 25px;
+            padding: 8px;
+            width: 30vw;
+            transition: 0.5s;
+            
+        }
+        button:after {
+            position: absolute;
+            opacity: 0;  
+            top: 14px;
+            right: -20px;
+            transition: all 0.5s;
+            transition: 0.5s;
+          }
+        
+        button:hover{
+            filter:invert(1);
+            width: 40vw;
+    
+    
+        }
+    
+        
+        
+    
+        }
+    
+    
+            
+        
+    }
+
+}
+
+
+//____TABLET______
+@media screen and (max-width: 770px){
+    
+    .registerBody{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../../assets/img/guitar.jpg);
+        background-size: cover;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h1{
+            color: $blue;
+            font-size: 50px;
+        }
+    
+        form{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        input{
+            height: 5vh;
+            width: 40vw;
+            font-size: 20px;
+            margin: 8px;
+            text-align: center;
+            border-radius: 40px;
+            
+    
+        
+    
+    
+            &::placeholder{
+                font-style: oblique;
+            }
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0px 0px 5px #61C5FA;
+            border-color: #5AB0DB;
+        }
+        
+        input:hover {
+            border: 1px solid #999;
+            border-radius: 40px;
+            // background-color: brown;
+            filter:invert(1);
+        }
+        .checkbox{
+            input{
+                width: 3vw;
+                color:$orange;
+            }
+        }
+        button{
+            border-radius: 40px;
+            margin-top: 2vh;
+            font-size: 15px;
+            padding: 8px;
+            width: 30vw;
+            transition: 0.5s;
+            
+        }
+        button:after {
+            position: absolute;
+            opacity: 0;  
+            top: 14px;
+            right: -20px;
+            transition: all 0.5s;
+            transition: 0.5s;
+          }
+        
+        button:hover{
+            filter:invert(1);
+            width: 40vw;
+    
+    
+        }
+    
+        
+        
+    
+        }
+    
+    
+            
+        
+    }
+
+}
+
+
+// _____TEL L______
+@media screen and (max-width: 425px){
+    .registerBody{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../../assets/img/guitar.jpg);
+
+
+
+
+        background-size:cover;
+        background-position:top;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h1{
+            color: $blue;
+            font-size: 50px;
+            margin-top: -4vh;
+            margin-bottom: 4vh;
+        }
+    
+        form{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        input{
+            height: 5vh;
+            width: 40vw;
+            margin: 4px;
+            text-align: center;
+            border-radius: 40px;
+            
+    
+        
+    
+    
+            &::placeholder{
+                font-style: oblique;
+            }
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0px 0px 5px #61C5FA;
+            border-color: #5AB0DB;
+        }
+        
+        input:hover {
+            border: 1px solid #999;
+            border-radius: 40px;
+            // background-color: brown;
+            filter:invert(1);
+        }
+        .checkbox{
+            input{
+                width: 3vw;
+                color:$orange;
+            }
+        }
+        button{
+            border-radius: 40px;
+            margin-top: 2vh;
+            font-size: 15px;
+            padding: 8px;
+            width: 30vw;
+            transition: 0.5s;
+            
+        }
+        button:after {
+            position: absolute;
+            opacity: 0;  
+            top: 14px;
+            right: -20px;
+            transition: all 0.5s;
+            transition: 0.5s;
+          }
+        
+        button:hover{
+            filter:invert(1);
+            width: 40vw;
+    
+    
+        }
+    
+        
+        
+    
+        }
+    
+    
+            
+        
+    }
+
 }

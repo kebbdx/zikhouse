@@ -85,3 +85,191 @@
     }
 
 }
+
+
+//____TABLET______
+@media screen and (max-width: 770px){
+    .loginBody{
+        height: 90vh;
+        width: 100%;
+       
+        background-image: url(../../assets/img/pianochild.jpg);
+        background-size: cover;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins';
+    
+        justify-content: center;
+        align-items: center;
+        form{
+            
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            height: 5vh;
+            width: 40vw;
+            margin: 10px;
+            text-align: center;
+            border-radius: 40px;
+    
+    
+            &::placeholder{
+                font-style: oblique;
+            }
+            
+    
+        
+    
+    
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0px 0px 5px #61C5FA;
+            border-color: #5AB0DB;
+        }
+        
+        input:hover {
+            border: 1px solid #999;
+            border-radius: 40px;
+            filter:invert(1);
+        }
+        button{
+            border-radius: 40px;
+            margin-top: 2vh;
+            padding: 8px;
+            width: 20vw;
+            // transition: 0.5s;
+            
+            
+        }
+        // button:after {
+        //     position: absolute;
+        //     opacity: 0;  
+        //     top: 14px;
+        //     right: -20px;
+        //     transition: all 0.5s;
+        //     transition: 0.5s;
+        //   }
+        
+        // button:hover{
+        //     filter:invert(1);
+        //     width: 40vw;
+    
+    
+        // }
+        a{
+            text-decoration: none;
+            color:$blue;
+            font-size: small;
+            margin: 2vh;
+    
+        }
+        
+        // a:hover{
+        //     color: white;
+        // }
+        
+    
+        }
+    
+    }
+
+
+}
+
+
+//____MOBILE L______
+@media screen and (max-width: 425px){
+    .loginBody{
+        height: 90vh;
+        width: 100%;
+       
+        background-image: url(../../assets/img/pianochild.jpg);
+        background-size: cover;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins';
+    
+        justify-content: center;
+        align-items: center;
+        form{
+            
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            height: 5vh;
+            width: 40vw;
+            margin: 10px;
+            text-align: center;
+            border-radius: 40px;
+    
+    
+            &::placeholder{
+                font-style: oblique;
+            }
+            
+    
+        
+    
+    
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0px 0px 5px #61C5FA;
+            border-color: #5AB0DB;
+        }
+        
+        input:hover {
+            border: 1px solid #999;
+            border-radius: 40px;
+            filter:invert(1);
+        }
+        button{
+            border-radius: 40px;
+            margin-top: 2vh;
+            padding: 8px;
+            font-size: 15px;
+            width: 30vw;
+            transition: 0.5s;
+            
+            
+        }
+        button:after {
+            position: absolute;
+            opacity: 0;  
+            top: 14px;
+            right: -20px;
+            transition: all 0.5s;
+            transition: 0.5s;
+          }
+        
+        button:hover{
+            filter:invert(1);
+            width: 40vw;
+    
+    
+        }
+        a{
+            text-decoration: none;
+            color:$blue;
+            font-size: small;
+            margin: 2vh;
+    
+        }
+        
+        a:hover{
+            color: white;
+        }
+        
+    
+        }
+    
+    }
+
+}

@@ -8,10 +8,10 @@
 
 			<h3>Modifier cet article</h3>
 			{# <div>
-													{{ form(form_text) }}
-														<button type="submit" class="btn">
-															Modifer</button>
-													</div> #}
+																{{ form(form_text) }}
+																	<button type="submit" class="btn">
+																		Modifer</button>
+																</div> #}
 			<div>
 				{{ form_start(form_text) }}
 				{{ form_widget(form_text.title , { 'attr': {'class': 'form-control',
@@ -20,7 +20,7 @@
 'placeholder': "Entrez le text"} }) }}
 
 				<button type="submit" class="btn">
-					Modifer</button>
+					Modifier</button>
 
 
 				{{ form_end(form_text) }}

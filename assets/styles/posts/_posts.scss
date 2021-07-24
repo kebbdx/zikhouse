@@ -3,8 +3,7 @@
     width: 100%;
     background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url(../../img/articles.jpg);
     background-size: cover;
-
-   background-repeat: space;
+    background-repeat: space;
     background-position: bottom;
     font-family: 'Poppins';
     color: white;
@@ -35,6 +34,95 @@
             color: $orange;
             
         }
+    }
+    
+}
+
+
+//____TABLET______
+@media screen and (max-width: 770px){
+    .postsBody{
+        height: 100vh;
+        width: 100%;
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url(../../img/articles.jpg);
+        background-size: cover;
+        background-repeat: space;
+        background-position: bottom;
+        font-family: 'Poppins';
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    
+        h1{
+            color:white;
+            font-size: 40px;
+            margin-bottom: 10vh;
+            &::first-letter{
+                color:$blue;
+            }
+    
+        }
+        a{
+            text-decoration: none;
+            font-size: 40px;
+            color: $gray;
+            &::first-letter{
+                color:$blue;
+            }
+           
+            &:hover{
+                color: $orange;
+                
+            }
+        }
+        
+    }
+    
+}
+
+//____MOBILE L______
+@media screen and (max-width: 425px){
+    .postsBody{
+        height: 100vh;
+        width: 100%;
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url(../../img/articles.jpg);
+        background-size: cover;
+        background-repeat: space;
+        background-position: bottom;
+        font-family: 'Poppins';
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    
+        h1{
+            color:white;
+            font-size: 35px;
+            margin-bottom: 10vh;
+            &::first-letter{
+                color:$blue;
+            }
+    
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: $gray;
+            &::first-letter{
+                color:$blue;
+            }
+           
+            &:hover{
+                color: $orange;
+                
+            }
+        }
+        
     }
     
 }

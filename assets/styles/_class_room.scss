@@ -6,8 +6,6 @@
         background-size: cover;
         background-repeat: space;
         background-position: bottom;
-        
-        background-color: black;
         color: white;
         display: flex;
         flex-direction: column;
@@ -63,7 +61,6 @@
         background-repeat: space;
         background-position: bottom;
         
-        background-color: black;
         color: white;
         display: flex;
         flex-direction: column;
@@ -72,6 +69,57 @@
 
 
 
+        justify-content: center;
+        align-items: center;
+
+        div{
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                    font-size: 30px;
+                    margin-bottom: 5vh;
+                    opacity: 0.6;
+                    margin-top: -10vh;      
+
+            }
+           
+            p{
+                font-size: 23px;
+                margin-bottom: 3vh;
+                opacity: 0.6;
+                &::first-letter{
+                    color:$blue;
+                }
+            }
+                
+        }
+    
+    
+}
+
+}
+
+//____MOBILE L______
+
+@media screen and (max-width: 425px){
+
+    .classroomBody{
+
+        height: 90vh;
+        width: 100%;
+        background-image: url(../img/instruments.jpg);
+        background-size: cover;
+        background-repeat: space;
+        background-position: top;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins';
         justify-content: center;
         align-items: center;
 
