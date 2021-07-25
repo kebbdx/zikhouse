@@ -95,7 +95,7 @@
         width: 100%;
         background-image: url(../../assets/img/guitar.jpg);
         background-size: cover;
-        color: black;
+        color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -314,14 +314,11 @@
        
         input{
             height: 5vh;
-            width: 40vw;
+            width: 60vw;
             margin: 4px;
             text-align: center;
             border-radius: 40px;
             
-    
-        
-    
     
             &::placeholder{
                 font-style: oblique;

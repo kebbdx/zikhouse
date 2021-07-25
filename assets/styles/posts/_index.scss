@@ -60,7 +60,7 @@
             border-radius: 40px;
             margin-top: 1vh;
             padding: 8px;
-            width: 10vw;
+            width: 20vw;
             transition: 0.5s;
             
         }
@@ -310,7 +310,7 @@
         
         }
         .article{
-            height: auto;
+            height: 80vh;
             width:50vw;
             background-color: black;
             display: flex;
@@ -323,7 +323,7 @@
             }
             
             p{
-                height: auto;
+                height:50vh ;
                 width: 100%;
                 text-align: left;
                 color: $orange;
@@ -337,10 +337,7 @@
         }
         
         form{
-            // button{
-            //     color: red;
-            //     background-color: green;
-            // }
+            
             button{
                 border-radius: 40px;
                 margin-top: 1vh;
@@ -374,4 +371,5 @@
     } 
 
 }
+
 
