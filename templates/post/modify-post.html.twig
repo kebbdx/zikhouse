@@ -7,11 +7,7 @@
 		{% if is_granted('ROLE_ADMIN') %}
 
 			<h3>Modifier cet article</h3>
-			{# <div>
-																{{ form(form_text) }}
-																	<button type="submit" class="btn">
-																		Modifer</button>
-																</div> #}
+
 			<div>
 				{{ form_start(form_text) }}
 				{{ form_widget(form_text.title , { 'attr': {'class': 'form-control',

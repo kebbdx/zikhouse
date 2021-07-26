@@ -42,6 +42,7 @@
             height: auto;
             width: 100%;
             text-align: left;
+            overflow: scroll;
             color: $orange;
             padding: 2vh;
             margin-left: 2vw;
@@ -185,6 +186,98 @@
 
 //____TABLET______
 @media screen and (max-width: 770px){
+    // .indexBody{
+    //     height: 100vh;
+    //     width: 100%;
+    //     background-color:black;
+    //     color:white;
+    //     display: flex;
+    //     font-family: "poppins";
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     a{
+    //         text-decoration: none;
+    //         font-size: 20px;
+    //         color: $gray;
+    //         margin-top: 4vh;
+    //         padding: 1vh;
+            
+            
+       
+    //         &:hover{
+    //              color: $orange;
+    //              border: none;
+    //              font-size: 20px;
+            
+    //         }
+        
+    //     }
+    //     .article{
+    //         height: auto;
+    //         width:50vw;
+    //         background-color: black;
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //         h1{
+    //             font-size: 40px;
+    //             text-transform: uppercase;
+    //         }
+            
+    //         p{
+    //             height: auto;
+    //             width: 100%;
+    //             text-align: left;
+    //             color: $orange;
+    //             overflow: scroll;
+    //             padding: 2vh;
+    //             margin-left: 2vw;
+    //             font-size:25px ;
+            
+    
+    //         }
+            
+    //     }
+        
+    //     form{
+    //         // button{
+    //         //     color: red;
+    //         //     background-color: green;
+    //         // }
+    //         button{
+    //             border-radius: 40px;
+    //             margin-top: 1vh;
+    //             padding: 8px;
+    //             width: 30vw;
+    //             font-size: 20px;
+    //             transition: 0.5s;
+                
+    //         }
+    //         button:after {
+    //             position: absolute;
+    //             opacity: 0;  
+    //             top: 14px;
+    //             right: -20px;
+    //             transition: all 0.5s;
+    //             transition: 0.5s;
+    //         }
+            
+    //         button:hover{
+    //             filter:invert(1);
+    //             width: 40vw;
+    
+    
+    //         }
+            
+    
+    //     }
+    
+           
+        
+    // } 
+
     .indexBody{
         height: 100vh;
         width: 100%;
@@ -213,8 +306,8 @@
         
         }
         .article{
-            height: auto;
-            width:50vw;
+            height: 80vh;
+            width:90vw;
             background-color: black;
             display: flex;
             flex-direction: column;
@@ -226,9 +319,10 @@
             }
             
             p{
-                height: auto;
+                height:30vh ;
                 width: 100%;
                 text-align: left;
+                overflow: scroll;
                 color: $orange;
                 padding: 2vh;
                 margin-left: 2vw;
@@ -240,15 +334,12 @@
         }
         
         form{
-            // button{
-            //     color: red;
-            //     background-color: green;
-            // }
+            
             button{
                 border-radius: 40px;
                 margin-top: 1vh;
                 padding: 8px;
-                width: 30vw;
+                width: 60vw;
                 font-size: 20px;
                 transition: 0.5s;
                 
@@ -311,7 +402,7 @@
         }
         .article{
             height: 80vh;
-            width:50vw;
+            width:90vw;
             background-color: black;
             display: flex;
             flex-direction: column;
@@ -323,9 +414,10 @@
             }
             
             p{
-                height:50vh ;
+                height:30vh ;
                 width: 100%;
                 text-align: left;
+                overflow: scroll;
                 color: $orange;
                 padding: 2vh;
                 margin-left: 2vw;
