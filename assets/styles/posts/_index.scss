@@ -27,7 +27,7 @@
     }
     .article{
         height: auto;
-        width:50vw;
+        width:80vw;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -38,14 +38,16 @@
             text-transform: uppercase;
         }
         
+       
         p{
-            height: auto;
+            height:60vh ;
             width: 100%;
             text-align: left;
             overflow: scroll;
             color: $orange;
             padding: 2vh;
             margin-left: 2vw;
+            font-size:25px ;
         
 
         }
@@ -53,10 +55,7 @@
     }
     
     form{
-        // button{
-        //     color: red;
-        //     background-color: green;
-        // }
+        
         button{
             border-radius: 40px;
             margin-top: 1vh;
@@ -119,7 +118,7 @@
         }
         .article{
             height: auto;
-            width:50vw;
+            width:80vw;
             background-color: black;
             display: flex;
             flex-direction: column;
@@ -130,10 +129,12 @@
                 text-transform: uppercase;
             }
             
+           
             p{
-                height: auto;
+                height:60vh ;
                 width: 100%;
                 text-align: left;
+                overflow: scroll;
                 color: $orange;
                 padding: 2vh;
                 margin-left: 2vw;

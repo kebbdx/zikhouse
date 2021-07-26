@@ -12,18 +12,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class PostController extends AbstractController
 {
-    // /**
-    //  * @Route("/post", name="post")
-    //  */
-    // public function index(): Response
-    // {
-    //     return $this->render('post/index.html.twig', [
-    //         'controller_name' => 'PostController',
-    //     ]);
-    // }
-
-
-
     //CREATE
 
     /**
@@ -39,7 +27,7 @@ class PostController extends AbstractController
         if($form->isSubmitted() && $form->isValid())
         {
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($post); // recuperer les infos
+            $entityManager->persist($post); // recuperer les infos, faire persister les données pour pouvoir les recuperer
             $entityManager->flush(); //envoi en bdd
             return $this->redirectToRoute("posts"); // redirection vers 'posts'
         }
@@ -66,7 +54,7 @@ class PostController extends AbstractController
         $posts = $this->getDoctrine()->getRepository(Post::class)->findAll();
 
         return $this->render('post/posts.html.twig', [
-            "posts" => $posts,
+            "posts" => $posts,// on envoi "posts" a la vue, c 'est tableau.
         ]);
     }
 
